@@ -1,0 +1,68 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+-->
+<!--
+   JET V1.1 appheader template
+   - Contains three main areas: appname/logo, global navigation, and application navigation.
+-->
+<div class="oj-web-applayout-max-width oj-flex-bar oj-sm-align-items-center">
+    <!-- Offcanvas toggle button -->
+    <div class="oj-flex-bar-start">
+        <!-- Button that toggles off-canvas content. -->
+        <button class="oj-button-lg" data-bind="click: toggleAppDrawer,
+      ojComponent: {component:'ojButton', label: offScreenButtonLabel,
+      chroming: 'half', display: 'icons',icons: {start: offScreenButtonIconClass}}">
+        </button>
+    </div>
+    <!--    : 'oj-flex-bar-middle oj-sm-align-items-baseline'-->
+    <div data-bind="css:'oj-flex-bar-center-absolute' ">
+        <!--        <span role="img" class="oj-sm-only-hide oj-icon demo-oracle-icon" title="Oracle Logo" alt="Oracle Logo"></span>-->
+        <span class="oj-web-applayout-header-title" title="Application Name" data-bind="text:'', css: {'demo-employee-name-person-detail-phone' : $root.smallOnly() == true}"></span>
+    </div>
+    <div class="headerTool oj-flex-bar-end" data-bind="visible: showInVisible()">
+        <!-- Responsive Toolbar -->
+        <div data-bind="ojComponent: {component:'ojToolbar'}" >
+            <select id="menuDataSelect2" data-bind="ojComponent: {component: 'ojSelect',
+                                                    value: Dataval,
+                                                    optionChange: optionChangedHandler,
+                                                    rootAttributes: {style:'text-align:right;'}}">
+                <option value="year">年</option>
+                <option value="quarter">季</option>
+                <option value="month">月</option>
+            </select>
+            <button id= "filterWhindow_Btn" class="filterWhindow_Btn"
+                    data-bind="click: filterWhindow_Action, 
+                       ojComponent: { component: 'ojButton', label: presentTitle }">
+            </button>
+        </div>
+    </div>
+    
+    <div class="headerTool oj-flex-bar-end" data-bind="visible: showAreaInVisible()">
+        <!-- Responsive Toolbar -->
+        <!--<div data-bind="ojComponent: {component:'ojToolbar'}" >-->
+            <span  data-bind="text: presentAreaTitle">123</span>
+        <!--</div>-->
+    </div>
+</div>
+<!--<div id="ojAppNav"
+     class="oj-web-applayout-navbar oj-sm-only-hide oj-web-applayout-max-width oj-navigationlist-item-dividers oj-md-condense oj-md-justify-content-center oj-lg-justify-content-flex-end"
+     data-bind="ojComponent: {component: 'ojNavigationList',
+    drillMode: 'none',
+    edge: 'top', navigationLevel: 'application',
+    selection: $root.router.stateId(),
+    data: dataSource,
+    optionChange: $root.optionChangeHandler,
+    item: { template: 'app_nav_template'}
+    }" aria-label="Choose only one navigation element">
+</div>
+
+ template for rendering app nav data 
+<script type="text/html" id="app_nav_template">
+    <li data-bind="css:{'oj-disabled' : $data['disabled'] == 'true'}">
+        <a href="#">
+            <span data-bind="css: $data['iconClass']"></span>
+             ko text: $data['name']  /ko
+        </a>
+    </li>
+</script>-->

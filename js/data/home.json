@@ -1,0 +1,561 @@
+{
+    "overall": {
+        "total_val1_1": 45001,
+        "value1_3": 80,
+        "value1_4": 87,
+        "total_val2_1": 345222,
+        "value2_3": 77,
+        "value2_4": 93,
+        "total_val3_1": 45000,
+        "value3_3": 87,
+        "value3_4": 70,
+        "total_val4_1": 4532,
+        "value4_3": 70,
+        "value4_4": 75,
+        "total_val5_1": 45000,
+        "value5_3": 67,
+        "value5_4": 70,
+        "total_val6_1": 23124,
+        "value6_3": 90,
+        "value6_4": 96,
+        "value1_3_1_color": "#fff",
+        "value1_4_1_color": "#fff",
+        "value1_3_2_color": "#fff",
+        "value1_4_2_color": "#fff",
+        "total_val1_1_1": 10,
+        "total_val1_1_2": 10,
+        "value1_3_1": 10,
+        "value1_4_1": 10,
+        "value1_3_2": 20,
+        "value1_4_2": 20,
+        "value2_3_1_color": "#fff",
+        "value2_4_1_color": "#fff",
+        "value2_3_2_color": "#fff",
+        "value2_4_2_color": "#fff",
+        "total_val2_3_1": 1,
+        "total_val2_3_2": 1,
+        "value2_3_1": 77,
+        "value2_4_1": 95,
+        "value2_3_2": 77,
+        "value2_4_2": 98,
+        "value3_3_1_color": "#fff",
+        "value3_4_1_color": "#fff",
+        "value3_3_2_color": "#fff",
+        "value3_4_2_color": "#fff",
+        "total_val3_3_1": 1,
+        "total_val3_3_2": 1,
+        "value3_3_1": 80,
+        "value3_4_1": 1,
+        "value3_3_2": 1,
+        "value3_4_2": 1,
+        "value4_3_1_color": "#fff",
+        "value4_4_1_color": "#fff",
+        "value4_3_2_color": "#fff",
+        "value4_4_2_color": "#fff",
+        "value4_3_3_color": "#fff",
+        "value4_4_3_color": "#fff",
+        "value4_3_4_color": "#fff",
+        "value4_4_4_color": "#fff",
+        "total_val4_3_1": 1,
+        "total_val4_3_2": 1,
+        "total_val4_3_3": 1,
+        "total_val4_3_4": 1,
+        "value4_3_1": 1,
+        "value4_4_1": 1,
+        "value4_3_2": 1,
+        "value4_4_2": 1,
+        "value4_3_3": 1,
+        "value4_4_3": 1,
+        "value4_3_4": 1,
+        "value4_4_4": 1,
+        "value6_3_1_color": "#fff",
+        "value6_4_1_color": "#fff",
+        "value6_3_2_color": "#fff",
+        "value6_4_2_color": "#fff",
+        "total_val6_3_1": "#fff",
+        "total_val6_3_2": "#fff",
+        "value6_3_1": 1,
+        "value6_4_1": 1,
+        "value6_3_2": 1,
+        "value6_4_2": 1
+
+
+    },
+    "salesRef": {
+        "xLine": 20,
+        "yLine": 20
+    },
+    "sales":[
+        {
+            "name":"东北大区",
+            "label":"东北大区",
+            "items":[
+                {
+                    "label":"东北大区",
+                    "labelPosition":"belowMarker",
+                    "z":23457.828,
+                    "x":107.9,
+                    "y":88.1
+                }
+            ]
+        },
+        {
+            "name":"华北大区",
+            "label":"华北大区",
+            "items":[
+                {
+                    "label":"华北大区",
+                    "labelPosition":"belowMarker",
+                    "z":6543,
+                    "x":78.4,
+                    "y":70.9
+                }
+            ]
+        },
+        {
+            "name":"华南大区",
+            "label":"华南大区",
+            "items":[
+                {
+                    "label":"华南大区",
+                    "labelPosition":"belowMarker",
+                    "z":237,
+                    "x":54.9,
+                    "y":58.1
+                }
+            ]
+        },
+        {
+            "name":"华中大区",
+            "label":"华中大区",
+            "items":[
+                {
+                    "label":"华中大区",
+                    "labelPosition":"belowMarker",
+                    "z":1736,
+                    "x":58.1,
+                    "y":44
+                }
+            ]
+        },
+        {
+            "name":"江沪大区",
+            "label":"江沪大区",
+            "items":[
+                {
+                    "label":"江沪大区",
+                    "labelPosition":"belowMarker",
+                    "z":3545,
+                    "x":65.9,
+                    "y":93.1
+                }
+            ]
+        },
+        {
+            "name":"京津冀大区",
+            "label":"京津冀大区",
+            "items":[
+                {
+                    "label":"京津冀大区",
+                    "labelPosition":"belowMarker",
+                    "z":2966,
+                    "x":53.6,
+                    "y":35
+                }
+            ]
+        },
+        {
+            "name":"西北大区",
+            "label":"西北大区",
+            "items":[
+                {
+                    "label":"西北大区",
+                    "labelPosition":"belowMarker",
+                    "z":141,
+                    "x":85.4,
+                    "y":92.8
+                }
+            ]
+        },
+        {
+            "name":"西南大区",
+            "label":"西南大区",
+            "items":[
+                {
+                    "label":"西南大区",
+                    "labelPosition":"belowMarker",
+                    "z":697,
+                    "x":139.9,
+                    "y":162.6
+                }
+            ]
+        }
+    ],
+    "KPI": {
+        "kpi_value1": 76,
+        "kpi_value1_2": 77,
+        "kpi_value1_3": 45,
+        "kpi_value1_4": "+1%",
+        "kpi_value2": 20,
+        "kpi_value2_2": 25,
+        "kpi_value2_3": 40,
+        "kpi_value2_4": "+2%",
+        "kpi_value3": 60,
+        "kpi_value3_2": 22,
+        "kpi_value3_3": 41,
+        "kpi_value3_4": "+4%",
+        "kpi_value4": 80,
+        "kpi_value4_2": 98,
+        "kpi_value4_3": 42,
+        "kpi_value4_4": "+3%"
+    },
+    "goals":{
+        "zb_value1_1":5,
+        "zb_value2_1":220,
+        "zb_value3_1":127,
+        "zb_value4_1":12855,
+        "zb_value5_1":10,
+        "zb_value6_1":13,
+        "zb_value7_1":89,
+        "zb_value8_1":98,
+        "zb_value9_1":200,
+        "zb_value10_1":87,
+        "zb_value1_2":85,
+        "zb_value2_2":97,
+        "zb_value3_2":111,
+        "zb_value4_2":99,
+        "zb_value5_2":88,
+        "zb_value6_2":77,
+        "zb_value7_2":83,
+        "zb_value8_2":99,
+        "zb_value9_2":97,
+        "zb_value10_2":88,
+        "zb_value1_3":83,
+        "zb_value2_3":78,
+        "zb_value3_3":97,
+        "zb_value4_3":99,
+        "zb_value5_3":98,
+        "zb_value6_3":12,
+        "zb_value7_3":87,
+        "zb_value8_3":98,
+        "zb_value9_3":88,
+        "zb_value10_3":97,
+        "zb_value1_1_color":"#F93253",
+        "zb_value2_1_color":"#F93253",
+        "zb_value3_1_color":"#749B28",
+        "zb_value4_1_color":"#749B28",
+        "zb_value5_1_color":"#749B28",
+        "zb_value6_1_color":"#F93253",
+        "zb_value7_1_color":"#F93253",
+        "zb_value8_1_color":"#749B28",
+        "zb_value9_1_color":"#F93253",
+        "zb_value10_1_color":"#749B28",
+        "zb_value1_3_color":"#F93253",
+        "zb_value2_3_color":"#F93253",
+        "zb_value3_3_color":"#749B28",
+        "zb_value4_3_color":"#749B28",
+        "zb_value5_3_color":"#749B28",
+        "zb_value6_3_color":"#F93253",
+        "zb_value7_3_color":"#F93253",
+        "zb_value8_3_color":"#749B28",
+        "zb_value9_3_color":"#F93253",
+        "zb_value10_3_color":"#749B28",
+        "zb_value1_2_color":"#F93253",
+        "zb_value2_2_color":"#749B28",
+        "zb_value3_2_color":"#749B28",
+        "zb_value4_2_color":"#749B28",
+        "zb_value5_2_color":"#F93253",
+        "zb_value6_2_color":"#F93253",
+        "zb_value7_2_color":"#F93253",
+        "zb_value8_2_color":"#749B28",
+        "zb_value9_2_color":"#749B28",
+        "zb_value10_2_color":"#F93253"
+    },
+    "poly": {
+        "polyseries": [
+            {
+                "name": "东北大区",
+                "items": [
+                    74,
+                    38,
+                    45,
+                    32,
+                    63
+                ]
+            },
+            {
+                "name": "京津冀大区",
+                "items": [
+                    50,
+                    45,
+                    56,
+                    54,
+                    72
+                ]
+            },
+            {
+                "name": "华北大区",
+                "items": [
+                    39,
+                    62,
+                    30,
+                    66,
+                    42
+                ]
+            },
+            {
+                "name": "西北大区",
+                "items": [
+                    50,
+                    55,
+                    56,
+                    14,
+                    72
+                ]
+            },
+            {
+                "name": "华中大区",
+                "items": [
+                    50,
+                    35,
+                    16,
+                    54,
+                    72
+                ]
+            },
+            {
+                "name": "西南大区",
+                "items": [
+                    50,
+                    55,
+                    56,
+                    54,
+                    72
+                ]
+            },
+            {
+                "name": "华南大区",
+                "items": [
+                    50,
+                    85,
+                    56,
+                    54,
+                    72
+                ]
+            },
+            {
+                "name": "江泸大区",
+                "items": [
+                    50,
+                    95,
+                    56,
+                    54,
+                    72
+                ]
+            },
+            {
+                "name": "浙江大区",
+                "items": [
+                    50,
+                    15,
+                    56,
+                    54,
+                    72
+                ]
+            }
+        ],
+        "polylineGroupsValue": [
+            "销量",
+            "收入",
+            "毛利",
+            "毛利率",
+            "贡献"
+        ]
+    },
+	"orderStatus": {
+        "chartname": "订单状态柱形图",
+        "data": {
+            "series": [
+                {
+                    "name": "原始订单总量",
+                    "items": [
+                        500.00
+                    ]
+                },
+                {
+                    "name": "关闭量",
+                    "items": [
+                        670.00
+                    ]
+                },
+                {
+                    "name": "库存未满足量",
+                    "items": [
+                        450.00
+                    ]
+                },
+                {
+                    "name": "客户延期发货量",
+                    "items": [
+                        560.00
+                    ]
+                },
+                {
+                    "name": "信用冻结量",
+                    "items": [
+                        870.00
+                    ]
+                },
+                {
+                    "name": "价格冻结量",
+                    "items": [
+                        800.00
+                    ]
+                },
+                {
+                    "name": "有效订单量",
+                    "items": [
+                        900.00
+                    ]
+                }
+            ],
+            "groups": [
+                "总部"
+            ]
+        }
+    },
+    "stockStatus": {
+        "chartname": "库存状态柱形图",
+        "data": {
+            "series": [
+                {
+                    "name": "正常库存(0-3个月)",
+                    "items": [
+                        633.58
+                    ]
+                },
+                {
+                    "name": "黄色预警(4-6个月)",
+                    "items": [
+                        213.52
+                    ]
+                },
+                {
+                    "name": "橙色预警(7-12个月)",
+                    "items": [
+                        104.5268
+                    ]
+                },
+                {
+                    "name": "红色预警(13-18个月)",
+                    "items": [
+                        83.5268
+                    ]
+                },
+                {
+                    "name": "过期(18个月以上)",
+                    "items": [
+                        44.5268
+                    ]
+                }
+            ],
+            "groups": [
+                "总部"
+            ]
+        }
+    },
+    "overdueCustomer": {
+        "chartname": "十大逾期客户",
+        "data": {
+            "series": [
+                {
+                    "name": "0-30",
+                    "items": [
+                        500,
+                        398,
+                        621,
+                        400,
+                        332,
+                        600,
+                        350,
+                        509,
+                        812,
+                        432
+                    ]
+                },
+                {
+                    "name": "30-60",
+                    "items": [
+                        500,
+                        432,
+                        431,
+                        400,
+                        633,
+                        600,
+                        350,
+                        509,
+                        325,
+                        234
+                    ]
+                },
+                {
+                    "name": "60-90",
+                    "items": [
+                        500,
+                        732,
+                        621,
+                        400,
+                        496,
+                        100,
+                        350,
+                        486,
+                        431,
+                        418
+                    ]
+                },
+                {
+                    "name": "90-120",
+                    "items": [
+                        500,
+                        109,
+                        221,
+                        400,
+                        532,
+                        500,
+                        350,
+                        675,
+                        300,
+                        329
+                    ]
+                },
+                {
+                    "name": "120+",
+                    "items": [
+                        500,
+                        288,
+                        321,
+                        400,
+                        221,
+                        200,
+                        350,
+                        332,
+                        200,
+                        632
+                    ]
+                }
+            ],
+            "groups": [
+                "客户1",
+                "客户2",
+                "客户3",
+                "客户4",
+                "客户5",
+                "客户6",
+                "客户7",
+                "客户8",
+                "客户9",
+                "客户10"
+            ]
+        }
+    }
+}

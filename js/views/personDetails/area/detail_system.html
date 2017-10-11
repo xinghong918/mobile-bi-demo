@@ -1,0 +1,218 @@
+<div id="accordionPage" data-bind="ojComponent: {component: 'ojAccordion'}">
+    <!--start-->
+    <div id="c1" data-bind="ojComponent: {component: 'ojCollapsible', expanded:true}">
+        <span>销量</span>
+        <div  align="center">
+            <!--第一个柱形start    yAxis: { min: 0, max: yMax_sale_category_column},-->
+
+            <div  ></div>
+            <h3 style="margin: 0 auto"  data-bind="text:label_sale_category_column"></h3>
+            <div id="sale_category_column" data-bind="ojComponent: {
+                    component: 'ojChart',
+                    type: 'combo',
+                    dataCursor:'on',
+                    selectionMode: 'none',
+                    animationOnDisplay: 'auto',
+                    animationOnDataChange: 'auto',
+                    hideAndShowBehavior: 'withoutRescale',
+                    series: comboSeriesValue_sale_category_column,
+                    groups: comboGroupsValue_sale_category_column,
+                    legend: {rendered: 'on'},
+
+                    y2Axis: {  tickLabel: {converter: y2Converter_sale_category_column}, alignTickMarks: 'off', majorTick: {rendered: 'off'}},
+                    animationOnDisplay: 'auto',
+                    valueFormats: {
+                        y2: {converter: y2Converter_sale_category_column, tooltipLabel: '比例'},
+                        y: {tooltipLabel: '销量'},
+                        group: {tooltipLabel: '区域'},
+                        series: {tooltipDisplay: 'off'}
+                    },
+                    animationOnDataChange: 'auto',
+                    orientation: 'horizontal',
+                    stack: 'off',
+                    hoverBehavior: 'none'
+                }" style="max-width:600px;width:100%;height:450px;">
+            </div>
+            <!--第一个柱形stop-->
+
+            <!--第一个饼图sale_category_pie_data开始-->
+            <h3 style="margin: 0 auto"  data-bind="text:pie_sale_category_label"></h3>
+            <div id="pieChart" data-bind="ojComponent: {
+            component: 'ojChart',
+            type: 'pie',
+            series: pie_sale_category_value,
+            animationOnDisplay: 'auto',
+            animationOnDataChange: 'auto',
+            selectionMode: 'single',
+            styleDefaults: {threeDEffect: ko.toJS(threeDValue), selectionEffect: ko.toJS(effectValue)},
+            valueFormats: {
+                    value: {tooltipLabel: '比例'},
+                    series: {tooltipLabel: '区域'}
+                },
+            hoverBehavior: 'dim'
+        }"
+                 style="max-width:500px;width:100%;height:350px;">
+            </div>
+            <!-- 2d/3d toggle button -->
+            <div id="radioButtonset2" class="oj-buttonset-width-auto" aria-label="Choose only one setting." aria-controls="pieChart"
+                 data-bind="ojComponent: {component: 'ojButtonset', checked: threeDValue, optionChange: threeDValueChange}">
+                <!-- ko foreach: threeDOptions -->
+                <label data-bind="attr: {for: id}"></label>
+                <input type="radio" name="threeD"
+                       data-bind="value: value, attr: {id: id},
+                   ojComponent: {component: 'ojButton', label: label}"/>
+                <!-- /ko -->
+            </div>
+            <!--第一个饼图sale_category_pie_data结束-->
+        </div>
+    </div>
+    <!--end-->
+   
+    <!--start-->
+    <div id="c3" data-bind="ojComponent: {component: 'ojCollapsible', expanded:false}">
+        <span>毛利</span>
+        <div align="center">
+            <!--第一个柱形start-->
+            <h3 style="margin: 0 auto">毛利额柱状图</h3>
+            <div id="income_category_column" data-bind="ojComponent: {
+                    component: 'ojChart',
+                    type: 'combo',
+                    dataCursor:'on',
+                    selectionMode: 'none',
+                    animationOnDisplay: 'auto',
+                    animationOnDataChange: 'auto',
+                    hideAndShowBehavior: 'withoutRescale',
+                    series: comboSeriesValue_income_category_column,
+                    groups: comboGroupsValue_income_category_column,
+                    legend: {rendered: 'on'},
+                    yAxis: {},
+                    y2Axis: { tickLabel: {converter: y2Converter_income_category_column}, alignTickMarks: 'off', majorTick: {rendered: 'off'}},
+                    animationOnDisplay: 'auto',
+                    valueFormats: {
+                        y2: {converter: y2Converter_income_category_column, tooltipLabel: '比例'},
+                        y: {tooltipLabel: '销量'},
+                        group: {tooltipLabel: '品种'},
+                        series: {tooltipDisplay: 'off'}
+                    },
+                    animationOnDataChange: 'auto',
+                    orientation: 'horizontal',
+                    stack: 'off',
+                    hoverBehavior: 'none'
+                }" style="max-width:600px;width:100%;height:450px;">
+            </div>
+            <!--第一个柱形stop-->
+            <!--第一个饼图sale_category_pie_data开始-->
+            <h3 style="margin: 0 auto"  data-bind="text:pie_profit_category_label"></h3>
+            <div id="pieChart" data-bind="ojComponent: {
+            component: 'ojChart',
+            type: 'pie',
+            series: pie_profit_category_value,
+            animationOnDisplay: 'auto',
+            animationOnDataChange: 'auto',
+            selectionMode: 'single',
+            styleDefaults: {threeDEffect: ko.toJS(threeDValue), selectionEffect: ko.toJS(effectValue)},
+            valueFormats: {
+                    value: {tooltipLabel: '比例'},
+                    series: {tooltipLabel: '区域'}
+                },
+            hoverBehavior: 'dim'
+        }"
+                 style="max-width:500px;width:100%;height:350px;">
+            </div>
+            <!-- 2d/3d toggle button -->
+            <div id="radioButtonset2" class="oj-buttonset-width-auto" aria-label="Choose only one setting." aria-controls="pieChart"
+                 data-bind="ojComponent: {component: 'ojButtonset', checked: threeDValue, optionChange: threeDValueChange}">
+                <!-- ko foreach: threeDOptions -->
+                <label data-bind="attr: {for: id}"></label>
+                <input type="radio" name="threeD"
+                       data-bind="value: value, attr: {id: id},
+                   ojComponent: {component: 'ojButton', label: label}"/>
+                <!-- /ko -->
+            </div>
+            <!--第一个饼图sale_category_pie_data结束-->
+            
+            <!--第二个柱形start-->
+            <h3 style="margin: 0 auto">毛利率柱状图</h3>
+
+            <div id="income_area_category_column" data-bind="ojComponent: {
+                    component: 'ojChart',
+                    type: 'combo',
+                    dataCursor:'on',
+                    selectionMode: 'none',
+                    animationOnDisplay: 'auto',
+                    animationOnDataChange: 'auto',
+                    hideAndShowBehavior: 'withoutRescale',
+                    series: comboSeriesValue_income_area_category_column,
+                    groups: comboGroupsValue_income_area_category_column,
+                    legend: {rendered: 'on'},
+                    yAxis: { },
+                    y2Axis: {tickLabel: {converter: y2Converter_income_area_category_column}, alignTickMarks: 'off', majorTick: {rendered: 'off'}},
+                    animationOnDisplay: 'auto',
+                    valueFormats: {
+                        y2: {converter: y2Converter_income_area_category_column, tooltipLabel: '比例'},
+                        y: {tooltipLabel: '销量'},
+                        group: {tooltipLabel: '品种'},
+                        series: {tooltipDisplay: 'off'}
+                    },
+                    animationOnDataChange: 'auto',
+                    orientation: 'horizontal',
+                    stack: 'off',
+                    hoverBehavior: 'none'
+                }" style="max-width:600px;width:100%;height:450px;">
+            </div>
+            <!--第二个柱形stop-->
+            <!--第三个柱形start-->
+            <h3 style="margin: 0 auto">单吨毛利额柱状图</h3>
+
+            <div id="profit_category_column" data-bind="ojComponent: {
+                    component: 'ojChart',
+                    type: 'combo',
+                    dataCursor:'on',
+                    selectionMode: 'none',
+                    animationOnDisplay: 'auto',
+                    animationOnDataChange: 'auto',
+                    hideAndShowBehavior: 'withoutRescale',
+                    series: comboSeriesValue_profit_category_column,
+                    groups: comboGroupsValue_profit_category_column,
+                    legend: {rendered: 'on'},
+                    yAxis: { },
+                    y2Axis: { tickLabel: {converter: y2Converter_profit_category_column}, alignTickMarks: 'off', majorTick: {rendered: 'off'}},
+                    animationOnDisplay: 'auto',
+                    valueFormats: {
+                        y2: {converter: y2Converter_profit_category_column, tooltipLabel: '比例'},
+                        y: {tooltipLabel: '销量'},
+                        group: {tooltipLabel: '品种'},
+                        series: {tooltipDisplay: 'off'}
+                    },
+                    animationOnDataChange: 'auto',
+                    orientation: 'horizontal',
+                    stack: 'off',
+                    hoverBehavior: 'none'
+                }" style="max-width:600px;width:100%;height:450px;">
+            </div>
+            <!--第三个柱形stop-->
+
+        </div>
+    </div>
+    <!--end-->
+    <div id="c22" data-bind="ojComponent: {component: 'ojCollapsible', expanded:false}">
+        <span>收入</span>
+        <div></div>
+    </div>
+    <div id="c23" data-bind="ojComponent: {component: 'ojCollapsible', expanded:false}">
+        <span>费用</span>
+        <div></div>
+    </div>
+    <div id="c24" data-bind="ojComponent: {component: 'ojCollapsible', expanded:false}">
+        <span>订单</span>
+        <div></div>
+    </div>
+    <div id="c25" data-bind="ojComponent: {component: 'ojCollapsible', expanded:false}">
+        <span>库存</span>
+        <div></div>
+    </div>
+    <div id="c26" data-bind="ojComponent: {component: 'ojCollapsible', expanded:false}">
+        <span>应收</span>
+        <div></div>
+    </div>
+</div>

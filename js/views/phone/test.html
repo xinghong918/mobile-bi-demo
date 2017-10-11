@@ -1,0 +1,48 @@
+<div id="datagrid" 
+    style="width:100%;max-width:502px;height:400px" 
+    aria-label="Data Grid with Row Expander"    
+    data-bind="ojComponent:
+    {
+        component:'ojDataGrid', 
+        data:dataSource, 
+                optionChange: updateoption,
+        selectionMode:{cell:'single'}, 
+        header:
+        {
+            column:
+            {
+                template: 'column_header_template', 
+                style: 'width:100px',
+                resizable: {width: 'enable'}
+            },
+            row:
+            {
+                template: 'row_header_template',
+                style: 'width:200px'
+            }
+        },
+        cell:
+        {
+            className: 'oj-helper-justify-content-flex-start'
+        }
+   }">
+</div>
+
+<script type="text/html" id="column_header_template">
+    <!-- ko if: $key=='resource' -->
+        <span data-bind="text: 'Resource'"></span>
+    <!-- /ko -->
+    <!-- ko if: $key=='start' -->
+        <span data-bind="text: 'Start Date'"></span>
+    <!-- /ko -->
+    <!-- ko if: $key=='end' -->
+        <span data-bind="text: 'End Date'"></span>
+    <!-- /ko -->
+</script>
+	
+<script type="text/html" id="row_header_template">
+    <div data-bind="ojComponent: {
+        component: 'ojRowExpander', 
+        context: $headerContext}"></div>
+    <span data-bind="text: $data"></span>
+</script>
