@@ -25,7 +25,8 @@ body {
     color:#fff;
 }
 
-.oj-web-applayout-header-title {
+.oj-web-applayout-header-title,
+.oj-dialog-body{
     background-color: #13152a;
     color:#fff;
 }
@@ -1148,7 +1149,8 @@ li.peoplephone div div a.people-phone-mobile-icon {
 }
 
 
-#categoryDetailsArea .oj-accordion-collapsible>.oj-collapsible-header {
+#categoryDetailsArea .oj-accordion-collapsible>.oj-collapsible-header,
+.demo-chart span, .demo-chart .oj-flex-bar-start{
     padding-top: 3px;
     padding-bottom: 3px;
     border: none;
@@ -1164,7 +1166,9 @@ li.peoplephone div div a.people-phone-mobile-icon {
 }
 
 
-#categoryDetailsArea .oj-collapsible-wrapper h3, #categoryDetailsArea .oj-collapsible-wrapper text,#categoryDetailsArea .oj-collapsible-wrapper div{
+#categoryDetailsArea .oj-collapsible-wrapper h3, #categoryDetailsArea .oj-collapsible-wrapper text,#categoryDetailsArea .oj-collapsible-wrapper div,
+.demo-chart h3, .demo-chart div text
+{
     color:white;
     fill:white;
 }
@@ -1701,7 +1705,9 @@ oj-helper-detect-expansion, .oj-helper-detect-contraction {
     }
 }
 
-.oj-accordion-collapsible>.oj-collapsible-wrapper>.oj-collapsible-content {
+.oj-accordion-collapsible>.oj-collapsible-wrapper>.oj-collapsible-content,
+.demo-chart
+{
     border:none;
     font-size: 0.8em;
     background: #13152a;
@@ -2300,3 +2306,10 @@ html:not([dir="rtl"]) .oj-datagrid-row-header-cell {
 .error {color: red}
 
 .success{color: green}
+
+.demo-button .oj-button-text,
+.demo-button .oj-button-icon{
+    background-color: #E7EAEC;
+    color:black;
+    font-size: small;
+}
