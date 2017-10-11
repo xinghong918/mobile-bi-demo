@@ -948,6 +948,8 @@ readOnly: true
                              plotArea: plotArea,
                              hideAndShowBehavior: 'withRescale',
                              highlightMatch : 'any',
+                             drilling: 'on',
+                             drill: onFirstDrillDown,
                              legend: {position: 'bottom'},
                              xAxis: xAxis, yAxis: yAxis,
                                      hoverBehavior: 'dim',
@@ -958,10 +960,26 @@ readOnly: true
                         </div>
                     </div>
 
+
+
                     <div style="clear:both;">
                     </div>
                 </div>
+
             </div>
+            <div id="dialogWrapper">
+                <div style="display:none" id="catDialog" 
+                     data-bind="ojComponent:{component: 'ojDialog', initialVisibility: 'hide', title: catDialogTitle}">
+                   <div class="oj-dialog-body">
+                     <div data-bind="ojModule:{name: modulePath, animation: oj.ModuleAnimations['coverStart']}" style="background-color:aliceblue">
+                    </div>
+                   </div>
+                    <!--
+                   <div class="oj-dialog-footer">
+                      <button id="okButton" data-bind="ojComponent: {component: 'ojButton', label: 'OK'}"> </button>    
+                   </div>-->
+                </div>
+             </div>
 
 
             <div id="polyLineChart" data-bind="ojComponent: {

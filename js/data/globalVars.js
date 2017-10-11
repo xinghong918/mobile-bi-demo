@@ -9,7 +9,15 @@ var servURL = "http://mesh.artadv.cn/queryData";
 var Auth;
 
 var filterData = {
-
+    primarySelection: 'CATALOG',
+    secondSelection: 'catalog',
+    year: '2017',
+    quarter: '4',
+    month: '10',
+    firstArea: '所有',
+    secondArea: '所有',
+    change: 'ALL',
+    rowId: ''
 };
 
 var chooseFilter;

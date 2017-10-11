@@ -1,0 +1,37 @@
+<div class="demo-chart" >
+        <span>销量</span>
+        <div  align="center">
+            <!--第一个柱形start    yAxis: { min: 0, max: yMax_sale_category_column},-->
+
+            <div  ></div>
+            <h3 style="margin: 0 auto"  data-bind="text:label_sale_category_column"></h3>
+            <div id="sale_category_column" data-bind="ojComponent: {
+                    component: 'ojChart',
+                    type: 'combo',
+                    dataCursor:'on',
+                    selectionMode: 'none',
+                    animationOnDisplay: 'auto',
+                    animationOnDataChange: 'auto',
+                    hideAndShowBehavior: 'withoutRescale',
+                    series: comboSeriesValue_sale_category_column,
+                    groups: comboGroupsValue_sale_category_column,
+                    legend: {rendered: 'on'},
+                    drilling: 'on',
+                    drill: drillDown,
+                    y2Axis: {  tickLabel: {converter: y2Converter_sale_category_column}, alignTickMarks: 'off', majorTick: {rendered: 'off'}},
+                    animationOnDisplay: 'auto',
+                    valueFormats: {
+                        y2: {converter: y2Converter_sale_category_column, tooltipLabel: '比例'},
+                        y: {tooltipLabel: '销量'},
+                        group: {tooltipLabel: '区域'},
+                        series: {tooltipDisplay: 'off'}
+                    },
+                    animationOnDataChange: 'auto',
+                    orientation: 'horizontal',
+                    stack: 'off',
+                    hoverBehavior: 'none'
+                }" style="max-width:600px;width:100%;height:450px;">
+            </div>
+            <!--第一个柱形stop-->
+        </div>
+    </div>

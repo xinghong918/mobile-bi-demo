@@ -3,7 +3,8 @@
  * The Universal Permissive License (UPL), Version 1.0
  */
 define(['knockout', 'ojs/ojcore', 'data/data', 'ojs/ojknockout', 'ojs/ojchart', 'ojs/ojgauge', 'ojs/ojtabs', 'ojs/ojinputtext', 'ojs/ojchart',
-    'ojs/ojselectcombobox', 'ojs/ojtabs', 'ojs/ojinputtext', 'ojs/ojinputnumber', 'ojs/ojgauge', 'ojs/ojaccordion', 'ojs/ojcollapsible', 'ojs/ojradioset'],
+    'ojs/ojselectcombobox', 'ojs/ojtabs', 'ojs/ojinputtext', 'ojs/ojinputnumber', 'ojs/ojgauge', 'ojs/ojaccordion', 'ojs/ojcollapsible', 'ojs/ojradioset','ojs/ojdialog',
+    'ojs/ojmodule', 'ojs/ojmoduleanimations'],
         function (ko, oj, data)
         {
             /*
@@ -38,6 +39,38 @@ define(['knockout', 'ojs/ojcore', 'data/data', 'ojs/ojknockout', 'ojs/ojchart', 
                     } else {
                         return aNum();
                     }
+                };
+                
+                self.catDialogTitle = ko.observable("各品类销售情况");
+                self.firstTitle = "";
+                self.secondTitle = "";
+                self.currentModule = ko.observable('detail_catalog_sv');
+                
+                self.modulePath = ko.pureComputed(
+                    function()
+                    {
+                      return ('personDetails/catalog/' + self.currentModule());
+                    }
+                  );
+                
+                self.onFirstDrillDown = function(event,data){
+                    self.currentModule('detail_catalog_sv');
+                    if($( "#catDialog" ).ojDialog( "isOpen" )){
+                        self.catDialogTitle(self.firstTitle);
+                    }
+                    else
+                    {
+                        self.catDialogTitle(data.series);
+                        self.firstTitle = data.series;
+                        $("#catDialog").ojDialog("open");
+                    }
+                };
+                
+                
+                self.onSecondDrillDown = function(event,data){
+                    self.secondTitle = data.group;
+                    self.catDialogTitle(self.firstTitle+" - "+self.secondTitle);
+                    self.currentModule('detail_system_sv');
                 };
 
                 self.total_val1_1_color = ko.observable("red");

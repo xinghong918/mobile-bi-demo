@@ -37,6 +37,7 @@ define(['knockout', 'ojs/ojcore', 'data/data', 'ojs/ojknockout', 'ojs/ojmasonryl
                 self.router = oj.Router.rootInstance;
                 var converterFactory = oj.Validation.converterFactory('number');
                 self.percentConverter = converterFactory.createConverter({style: 'decimal', maximumFractionDigits: 0});
+                
                 /*
                 data.fetchData('js/data/employee100.json').then(function (person) {
                     self.personProfile(person);
